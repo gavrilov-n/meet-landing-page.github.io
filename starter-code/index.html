@@ -5,27 +5,41 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
-  
+  <link rel="stylesheet" href="style.scss">
   <title>Frontend Mentor | Meet landing page</title>
 </head>
 <body>
-  Meet makes it easy to connect with others face-to-face virtually and collaborate across any device.
-
-  Download v1.3
-  What is it?
-
-  01
-  Built for modern use
-
-  Smarter meetings, all in one place
-
-  Send messages, share files, show your screen, and record your meetings — all in one 
-  workspace. Control who can join with invite-only team access, data encryption, and data export.
-
-  02
-  Experience more together
-  Stay connected with reliable HD meetings and unlimited one-on-one and group video sessions.
-
-  Download v1.3
+  <header class="hero">
+    <div class="flex-container">
+      <img src="./assets/logo.svg" alt="meet logo">
+      <img src="./assets/tablet/image-hero.png" alt="different people smiling and looking at the camera">
+      <h1 class="main-header">Group Chat for Everyone</h1>
+      <p class="text main-text">Meet makes it easy to connect with others face-to-face virtually and collaborate across any device.</p>
+      <div class="btn-container">
+        <a href="#" class="btn btn-download">Download v1.3</a>
+        <a href="#" class="btn btn-overview">What is it?</a>
+      </div>
+    </div>
+  </header>
+  <div class="marker">01</div>
+  <main class="features">
+    <div class="image-grid">
+      <img src="./assets/desktop/image-man-texting.jpg" alt="person in white shirt texting on his phone and smiling" class="hero-img">
+      <img src="./assets/desktop/image-men-in-meeting.jpg" alt="person having an online meeting" class="hero-img">
+      <img src="./assets/desktop/image-woman-in-videocall.jpg" alt="women in headphones chatting in videocall and smiling" class="hero-img">
+      <img src="./assets/desktop/image-women-videochatting.jpg" alt="three elderly women look at the phone" class="hero-img">
+    </div>
+    <h2>Built for modern use</h2>
+    <h3>Smarter meetings, all in one place</h3>
+    <p class="text hero-text">Send messages, share files, show your screen, and record your meetings — all in one 
+      workspace. Control who can join with invite-only team access, data encryption, and data export.</p>
+  </main>
+  <div class="marker">02</div>
+  <footer>
+    <img src="./assets/tablet/image-footer.jpg" alt="">
+    <h2 class="footer-header">Experience more together</h2>
+    <p class="text footer-text">Stay connected with reliable HD meetings and unlimited one-on-one and group video sessions.</p>
+    <a href="#" class="btn btn-footer">Download v1.3</a>
+  </footer>
 </body>
 </html>
