@@ -1,0 +1,11 @@
+@use './mixins' as mixin;
+
+.features {
+    @include mixin.flex();
+    padding: 6.4rem 3.2rem;
+}
+
+.grid-img {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}

@@ -5,22 +5,23 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
-  <link rel="stylesheet" href="style.scss">
+  <link rel="stylesheet" href="./styles/style.scss">
   <title>Frontend Mentor | Meet landing page</title>
 </head>
-<body class="flex-center">
-  <header class="hero flex-center">
-    <div class="flex-container flex-center">
-      <div class="img-container flex-center">
-        <img src="./assets/logo.svg" alt="meet logo">
+<body>
+  <div class="page">
+      <header class="hero">
+    <div class="flex-container">
+      <div class="img-container">
+        <img src="./assets/logo.svg" alt="meet logo" class="logo">
         <img src="./assets/tablet/image-hero.png" alt="different people smiling and looking at the camera" class="img-people">
       </div>
       <div class="text-container">
-        <h1 class="text-preset-1">Group Chat for Everyone</h1>
-        <p class="text main-text">Meet makes it easy to connect with others face-to-face virtually and collaborate across any device.</p>
-        <div class="btn-container flex-center">
-        <button class="btn btn-download text-preset-btn">Download v1.3</>
-        <button class="btn btn-overview text-preset-btn">What is it?</button>
+        <h1 class="text-preset-display">Group Chat for Everyone</h1>
+        <p class="text-preset-body">Meet makes it easy to connect with others face-to-face virtually and collaborate across any device.</p>
+        <div class="btn-container">
+        <button class="btn-preset-cyan text-preset-button">Download <span class="dimmed">v1.3</span></button>
+        <button class="btn-preset-purple text-preset-button">What is it?</button>
       </div>
       </div>
     </div>
@@ -33,19 +34,20 @@
       <img src="./assets/desktop/image-woman-in-videocall.jpg" alt="women in headphones chatting in videocall and smiling" class="hero-img">
       <img src="./assets/desktop/image-women-videochatting.jpg" alt="three elderly women look at the phone" class="hero-img">
     </div>
-    <div class="flex-center">
-      <h2 class="text-preset-3">Built for modern use</h2>
-      <h3 class="text-preset-2">Smarter meetings, all in one place</h3>
-      <p class="text">Send messages, share files, show your screen, and record your meetings — all in one 
+    <div>
+      <h3 class="text-preset-eyebrow">Built for modern use</h3>
+      <h2 class="text-preset-heading">Smarter meetings, all in one place</h2>
+      <p class="text-preset-body">Send messages, share files, show your screen, and record your meetings — all in one 
       workspace. Control who can join with invite-only team access, data encryption, and data export.</p>
     </div>
   </main>
   <div class="marker">02</div>
   <footer>
-    <img src="./assets/tablet/image-footer.jpg" alt="">
-    <h2 class="footer-header">Experience more together</h2>
-    <p class="text footer-text">Stay connected with reliable HD meetings and unlimited one-on-one and group video sessions.</p>
-    <button class="btn btn-footer text-preset-btn">Download v1.3</button>
+    <img src="./assets/tablet/image-footer.jpg" alt="" class="footer-img">
+    <h2 class="text-preset-heading">Experience more together</h2>
+    <p class="text-preset-body">Stay connected with reliable HD meetings and unlimited one-on-one and group video sessions.</p>
+    <button class="btn-preset-purple text-preset-button">Download <span class="dimmed">v1.3</span></button>
   </footer>
+  </div>
 </body>
 </html>

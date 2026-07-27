@@ -1,0 +1,35 @@
+/* Global components */
+@use './mixins' as mixin;
+
+@font-face {
+    font-family: "Red Hat Display";
+    src: url(./assets/fonts/red-hat.display-black.ttf);
+
+    font-weight: 900;
+}
+
+@font-face {
+    font-family: "Red Hat Display";
+    src: url(./assets/fonts/red-hat.display-medium.ttf);
+    font-weight: 500;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: "Red Hat Display", sans-serif;
+}
+
+.page {
+    @include mixin.flex();
+    margin: 0 auto;
+    max-width: 37.5rem;
+}
