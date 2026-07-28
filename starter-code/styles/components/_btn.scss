@@ -1,0 +1,22 @@
+@use './tokens' as token;
+
+$btn-preset: ( 
+    "purple": (background-color:token.$purple-600, min-height: 5.6rem, min-width: 16.1rem, border-radius: 2.9rem, border:none),
+    "cyan": (background-color:token.$cyan-600, min-height: 5.6rem, min-width: 19.3rem, border-radius: 2.9rem, border:none),
+);
+
+@each $key, $val in $btn-preset {
+    .btn-preset-#{$key} {
+        @each $inner-key, $inner-val in $val {
+            #{$inner-key}: $inner-val;
+        }
+    }
+}
+
+.btn-preset-purple:active {
+    background-color: token.$purple-300;
+}
+
+.btn-preset-cyan:active {
+    background-color: token.$cyan-300;
+}

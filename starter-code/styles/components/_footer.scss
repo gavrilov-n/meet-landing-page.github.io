@@ -1,0 +1,30 @@
+@use './tokens' as token;
+
+.footer {
+    background-color: token.$cyan-600;
+}
+
+.footer {
+    position: relative;
+    padding: 6.4rem 3.2rem;
+    img {
+        inset: 0;
+        height: 100%;
+        object-fit: cover;
+        opacity: 0.1;
+        position:absolute;
+    }
+
+    .text-preset-heading, .text-preset-body {
+        color: token.$primary-white;
+    }
+
+    .text-preset-heading {
+        font-weight: 900;
+    }
+}
+
+.z-wrapper {
+    position: relative;
+    z-index: 1;
+}

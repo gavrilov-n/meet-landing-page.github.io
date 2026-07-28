@@ -1,0 +1,36 @@
+@use './mixins' as mixin;
+@use './tokens' as token;
+
+@media (min-width: 1440px) {
+    .page {
+        max-width: 1440px;
+    }
+
+    .hero-img {
+        max-width: 256px;
+        max-height: 256px;
+    }
+
+    .z-wrapper {
+        margin: 112px 80px;
+        @include mixin.flex($direction: row, $align: center, $justify: space-evenly);
+        gap: 32px;
+    }
+
+    .hero-left, .hero-right { 
+        display: block; 
+    }
+
+    .img-people {
+        display: none; 
+    }
+
+    .text-container {
+        @include mixin.flex($direction: row, $justify: center);
+        gap: 300px;
+    }
+
+    .desktop-wrapper {
+        min-width: 448px;
+    }
+}

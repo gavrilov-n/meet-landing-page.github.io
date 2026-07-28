@@ -1,0 +1,26 @@
+@use './mixins' as mixin;
+
+.features {
+    @include mixin.flex();
+    padding: 6.4rem 3.2rem;
+
+    .text-preset-eyebrow {
+    margin-bottom: 1.6rem;
+    }
+
+    .text-preset-heading, .text-preset-body {
+    margin-bottom: 6.4rem;
+    }
+}
+
+.grid-img {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.6rem;
+    margin: 6.4rem 0rem;
+
+    .hero-img {
+        border-radius: 1rem;
+    }
+}
+
