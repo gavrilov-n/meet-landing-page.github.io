@@ -15,10 +15,6 @@
       <div class="img-container">
         <img src="./assets/logo.svg" alt="meet logo" class="logo">
         <img src="./assets/tablet/image-hero.png" alt="different people smiling and looking at the camera" class="img-people">
-        <picture>
-          <img media="(min-width: 1440px)" src="./assets/tablet/image-hero-right.png" alt="different people smiling and looking at the camera" class="img-people">
-          <img media="(min-width: 1440px)" src="./assets/tablet/image-hero-left.png" alt="different people smiling and looking at the camera" class="img-people"">
-        </picture>
       </div>
       <div class="text-container">
         <h1 class="text-preset-display">Group Chat for Everyone</h1>
@@ -48,7 +44,11 @@
   <div class="marker marker-bottom text-preset-button">02</div>
   </div>
   <footer class="footer">
-    <img src="./assets/tablet/image-footer.jpg" alt="" class="footer-img">
+    <picture>
+    <source media="(min-width: 1440px)" srcset="./assets/desktop/image-footer.jpg">
+    <source media="(min-width: 768px)"  srcset="./assets/tablet/image-footer.jpg">
+    <img src="./assets/mobile/image-footer.jpg" alt="" class="footer-img">
+</picture>
     <div class="z-wrapper">
       <h2 class="text-preset-heading">Experience more together</h2>
       <p class="text-preset-body">Stay connected with reliable HD meetings and unlimited one-on-one and group video sessions.</p>
