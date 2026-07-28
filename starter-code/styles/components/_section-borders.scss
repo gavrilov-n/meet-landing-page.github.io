@@ -1,0 +1,32 @@
+@use './tokens' as token;
+@use './mixins' as mixin;
+.marker {
+    @include mixin.flex();
+    width: 5.6rem;
+    height: 5.6rem;
+    border: 1px solid token.$slate-600;
+    color: token.$slate-600;
+    border-radius: 5rem;
+    text-align: center;
+    background-color: token.$primary-white;
+    &::before {
+        content: "";
+        position: absolute;
+        bottom: 100%;
+        left: 50%;
+        width: 0.1rem;
+        height: 8rem;
+        background-color: token.$slate-600;
+    }
+}
+
+.marker-top {
+    position: relative;
+    margin-top: 12.8rem;
+}
+
+.marker-bottom {
+    position: relative;
+    top: 0.3rem;
+    z-index: 1;
+}

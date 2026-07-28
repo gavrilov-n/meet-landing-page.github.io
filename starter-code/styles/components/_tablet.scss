@@ -1,0 +1,16 @@
+@use './mixins' as mixin;
+@use './tokens' as token;
+
+@media (min-width: 768px) {
+    .page {
+        max-width: 76.5rem;
+    }
+    
+    .btn-container {
+        @include mixin.flex($direction: row);
+    }
+
+    .grid-img {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}

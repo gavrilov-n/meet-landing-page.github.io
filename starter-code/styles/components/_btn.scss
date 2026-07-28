@@ -12,3 +12,11 @@ $btn-preset: (
         }
     }
 }
+
+.btn-preset-purple:active {
+    background-color: token.$purple-300;
+}
+
+.btn-preset-cyan:active {
+    background-color: token.$cyan-300;
+}
