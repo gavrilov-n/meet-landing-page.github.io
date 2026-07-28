@@ -3,6 +3,14 @@
 .features {
     @include mixin.flex();
     padding: 6.4rem 3.2rem;
+
+    .text-preset-eyebrow {
+    margin-bottom: 1.6rem;
+    }
+
+    .text-preset-heading, .text-preset-body {
+    margin-bottom: 6.4rem;
+    }
 }
 
 .grid-img {
@@ -16,10 +24,3 @@
     }
 }
 
-.text-preset-eyebrow {
-    margin-bottom: 1.6rem;
-}
-
-.text-preset-heading, .text-preset-body {
-    margin-bottom: 6.4rem;
-}
